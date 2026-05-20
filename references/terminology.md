@@ -55,6 +55,8 @@ Term block shape:
 
 Use the target Linear language for labels and explanatory prose. Keep terms, term IDs, issue IDs, and necessary quoted identifiers in their original form.
 
+When referencing confirmed terms from an issue, link each term ID to the corresponding term block in the official glossary. Keep unconfirmed terms as plain text so they are not mistaken for accepted glossary entries.
+
 ## Issue Terminology Block
 
 When a workspace requires terminology tracking, every applicable issue should include a terminology block. Use the target Linear language for headings and labels.
@@ -68,8 +70,8 @@ For confirmed terms:
 
 涉及术语：
 
-* `TERM-story`
-* `TERM-scene`
+* [`TERM-story`](<正式术语表链接#term-story>)
+* [`TERM-scene`](<正式术语表链接#term-scene>)
 
 术语影响：
 
@@ -86,7 +88,7 @@ For unconfirmed new terms:
 
 涉及术语：
 
-* `TERM-story`
+* [`TERM-story`](<正式术语表链接#term-story>)
 * 待确认：`TERM-story-guide`
 
 术语影响：
