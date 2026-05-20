@@ -23,6 +23,8 @@ If the Linear issue is unclear, too broad, infeasible, or inconsistent, comment 
 
 When implementing, derive engineering tasks from the current issue body. Use comments to understand why the body changed, not as a replacement for the body. If a comment contains an accepted decision that is not reflected in the body, reconcile the body and leave a body-edit comment before continuing.
 
+If the workspace maintains an official glossary, keep confirmed terms in the glossary and treat code-name mapping as an engineering concern. Do not treat unconfirmed terms in the issue terminology block as approved glossary entries.
+
 ## When To Create GitHub Issues
 
 Create or update a GitHub engineering issue only when it adds real execution value:

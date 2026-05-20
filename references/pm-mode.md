@@ -24,6 +24,7 @@ Write the Linear issue in PM language and in the target repo's Linear language. 
 - Acceptance criteria: observable behavior or product outcomes, not implementation steps.
 - Constraints and non-goals: what should remain out of scope.
 - Source links: docs, PRDs, discussion, branches, screenshots, or related issues.
+- Terminology: official term IDs used or proposed by the issue, when the workspace maintains a glossary.
 - Requirements needing discussion: concrete product requirements, acceptance details, scope boundaries, or launch criteria that are not settled yet.
 - Decision points: the specific decisions needed to settle those requirements.
 - Implementation links: GitHub issue or PR URLs when they exist.
@@ -40,6 +41,7 @@ Use clear sections rather than a dense paragraph. Prefer this shape:
 - Desired outcome: describe the shipped user-visible state in product terms.
 - Acceptance criteria: use observable bullets that a developer, reviewer, or PM can verify.
 - Constraints and non-goals: list what must not change, what is intentionally out of scope, and any sequencing limits.
+- Terminology: list confirmed terms and unconfirmed proposed term IDs when the workspace uses an official glossary.
 - Requirements needing discussion: list unresolved product requirements, or write `None`.
 - Decision points: name the decisions needed to close each unresolved requirement.
 - Implementation links: include GitHub issue, PR, branch, or design link when available.
@@ -56,6 +58,8 @@ Good constraints help developers avoid wrong implementation paths.
 - Weak: "Keep current flow."
 
 Always include a `Requirements needing discussion` section when source material is incomplete, branch-first, implementation-first, contradictory, or still under review. Use short bullets phrased as product requirements, not engineering tasks. Use `None` only when the Linear issue is already a complete product contract with no unresolved product requirement, acceptance, scope, or sequencing questions.
+
+When the workspace maintains an official glossary, read `references/terminology.md`. Every applicable issue should include a terminology block. Proposed-but-unconfirmed terms stay in the issue's terminology block and requirements needing discussion; do not write them into the official glossary until confirmed. Use the target Linear language for labels such as `待确认`, not English workflow labels such as `Proposed`, unless the target Linear language is English.
 
 Keep the issue body focused on the current contract. If discussion comments remove or change scope, update the body to the latest accepted wording and preserve the old reasoning in comments instead of leaving strikethrough text in the body.
 
@@ -93,6 +97,21 @@ A learner can describe a real story in their own words, answer focused follow-up
 ## Requirements needing discussion
 
 - Decide whether the first release must support multiple scenes or only one scene per story.
+- Decide whether `TERM-story-guide` should enter the official glossary.
+
+## Terminology
+
+Glossary: <official glossary link when available>
+
+Terms:
+
+- `TERM-story`
+- Pending confirmation: `TERM-story-guide`
+
+Terminology impact:
+
+- Uses confirmed term `TERM-story`.
+- Proposes `TERM-story-guide`, but the term must not be added to the official glossary until PM confirms it.
 
 ## Decision points
 

@@ -12,6 +12,7 @@ Comment in Linear when:
 - implementation reveals a product flaw or missing edge case
 - priority, sequencing, or ownership needs a PM decision
 - docs, discussion, implementation, or existing issues disagree
+- a proposed term, alias, or glossary definition needs product confirmation
 - a GitHub engineering issue or PR changes what the Linear issue promises
 - PRD sync is needed after a decision settles
 
@@ -29,6 +30,8 @@ Write comments in product-contract language and in the target repo's Linear lang
 Avoid long technical traces. Put test logs, code plans, stack traces, and validation proof in GitHub or PRs, then link them from Linear if needed.
 
 When updating an issue body, keep a dedicated `Requirements needing discussion` section. Move resolved items out of that section by updating the contract, then add a short body-edit comment. If the decision does not change the body, add a decision comment explaining why no body edit was needed.
+
+For terminology discussion, follow `references/terminology.md`: unconfirmed terms stay in the issue's terminology block and unresolved questions; confirmed terms may be written to the official glossary if the workspace authorizes glossary updates. Use the determined Linear language for workflow labels, for example `待确认` in Chinese issues instead of `Proposed`.
 
 ## Body Maintenance
 
@@ -91,3 +94,4 @@ When a discussion resolves:
 - update labels, priority, status, cycle, project, or assignee if the decision changes routing
 - create or update a GitHub engineering issue only when developer execution needs it
 - mark PRD sync as done or create an explicit follow-up when the decision should become durable product docs
+- update the official glossary only after the term is confirmed and the workspace expects glossary maintenance
