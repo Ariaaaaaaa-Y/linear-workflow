@@ -55,11 +55,20 @@ Term block shape:
 
 Use the target Linear language for labels and explanatory prose. Keep terms, term IDs, issue IDs, and necessary quoted identifiers in their original form.
 
-When referencing confirmed terms from an issue, link each term ID to the corresponding term block in the official glossary. Keep unconfirmed terms as plain text so they are not mistaken for accepted glossary entries.
+When an issue body references confirmed glossary terms, link each term ID in the issue terminology block to the corresponding term block in the official glossary. Keep unconfirmed new terms as plain text so they are not mistaken for accepted glossary entries.
 
 ## Issue Terminology Block
 
-When a workspace requires terminology tracking, every applicable issue should include a terminology block. Use the target Linear language for headings and labels.
+When a workspace requires terminology tracking, every issue body that uses official glossary terms must include a terminology block. Use the target Linear language for headings and labels.
+
+The terminology block must list every official glossary term used in the issue body, not only terms introduced, changed, deprecated, or discussed by the issue. When updating an existing issue body, update the terminology block at the same time:
+
+- Preserve an existing terminology block; do not remove it during rewrites or cleanup.
+- Add official terms that now appear in the body.
+- Remove official terms that no longer appear in the body.
+- Link every confirmed term ID to its official glossary term block.
+- Keep unconfirmed new terms as plain text without glossary links.
+- Place the terminology block before unresolved questions / confirmation questions when those sections exist.
 
 For confirmed terms:
 
@@ -127,9 +136,11 @@ When a term is not confirmed, keep it in the issue's terminology block and unres
 
 ## Automation Guidance
 
-If automating glossary maintenance:
+If automating glossary backlinks or related-issue maintenance:
 
 - Parse explicit `TERM-*` IDs from issue terminology blocks.
 - Do not infer references by searching product words such as `Story` or `Scene`.
 - Update only generated backlinks or related-issue sections.
 - Do not rewrite human-maintained definitions, aliases, or notes.
+
+If auditing or updating an issue body, compare the body text with the official glossary terms and update the issue's own terminology block accordingly. This is issue-body maintenance, not glossary backlink automation.
